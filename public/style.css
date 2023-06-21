@@ -1,0 +1,40 @@
+
+@import "nav.css";
+@import "footer.css";
+
+
+* {
+    color: white;
+    box-sizing: border-box;
+    transition: all 0.25s;
+}
+
+body{
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 90vw;
+}
+
+main{
+    min-height: 100vh;
+    background-color: #444;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+
+/* navbar */
+
+/* image */
+
+.colored-div{
+    background-color: indigo;
+    border: white 1px solid;
+}

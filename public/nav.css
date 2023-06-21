@@ -1,0 +1,23 @@
+ul li {
+    background-color: steelblue;
+}
+
+li a {
+    color: white
+}
+
+div.themes > div {
+    background-color: indigo;
+    border: white 1px solid;
+}
+
+a{
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a:hover{
+    color: #ddd8d8;
+    font-weight: bold;
+    text-decoration: underline;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <%- include('partials/bootstrap.ejs') %>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--DO NOT MODIFY ORIGINAL FILE-->
+        <%- include('partials/navbar.ejs') %>
+    <main class="p-1 my-1 d-flex align-items-center justify-content-center container-lg bg-dark">
+        <div class="card mb-3 text-bg-primary" style="max-width: 540px;">
+            <div class="card-header bg-light text-primary">
+                <h6>The Author</h6>
+            </div>
+            <div class="row g-0">
+              <div class="col-4 col-md-4 d-flex align-items-center">
+                <img src="images/pic-cross.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col col-md-6">
+                <div class="card-body">
+                    <h5 class="card-title">Gabriel Rengifo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, mollitia. Dignissimos ex asperiores, id veniam voluptatibus reiciendis totam cupiditate vero distinctio fugit! Dicta fugit voluptates iusto, sunt id perferendis deleniti.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-light text-primary">
+                <div class="row text-dark fs-1">
+                    <h6 class="col-4">Social Media</h6>
+                    <i class="col-2 fa-brands fa-twitter" style="color: #242e51;"></i>
+                    <i class="col-2 fa-brands fa-youtube" style="color: #242e51;"></i>
+                    <i class="col-2 fa-brands fa-linkedin" style="color: #242e51;"></i>
+                    <i class="col-2 fa-brands fa-twitch" style="color: #242e51;"></i>
+                </div>
+            </div>
+          </div>
+       
+    </main>
+    <%-  include("partials/footer.ejs")   %>
+</body>
+</html>

@@ -1,5 +1,32 @@
 const express = require('express');
+const helmet = require('helmet')
 const app = express();
+
+app.use(helmet.frameguard({ action: "SAMEORIGIN" }));
+
+
+class videoItem{
+    constructor(id,name,thumbnail,dbId){
+        this.id = id,
+        this.name = name,
+        this.thumbnail = thumbnail,
+        this.dbId = dbId
+    }
+};
+
+function curateList(json){
+    const videoQuant = json["items"];
+    const curated = []
+    for (let i = 0; i < videoQuant.length; i++){
+        const currentItem = videoQuant[i];
+        const id = currentItem["id"];
+        const name = currentItem["snippet"]["title"];
+        const thumbnail = currentItem["snippet"]["thumbnails"]["standard"]["url"];
+        const dbId = 'https://www.youtube.com/watch?v=' + currentItem["snippet"]["resourceId"]["videoId"];
+        curated.push(new videoItem(id,name,thumbnail,dbId))
+    }
+    return curated
+}
 
 //AIzaSyB4xWqoPFrjOOm3CI24jz1TdHMEZiVO8CA
 //upload playlist id: PLU6MwRDOX1vWVuF1UneZYWVmep7kAamML
@@ -23,12 +50,10 @@ app.get('/',(req,res) => {
 
 app.get('/classes',async (req,res) => {
 
-    let response = await fetch(ytVideos)
+    let listResponse = await fetch(ytVideos)
     .then(list => list.json());
-
-    console.log(response)
-
-    res.status(200).render('classes');
+    const list = curateList(listResponse)
+    res.status(200).render('classes',{ data: list});
 })
 
 app.get('/mats',(req,res) => {

@@ -12,15 +12,20 @@
     <!--DO NOT MODIFY ORIGINAL FILE-->
         <%- include('partials/navbar.ejs') %>
     <main class="container-lg p-1 my-1 bg-dark">
-        <h1 class="col">Class 1: Agua</h1>
+        <h1>Mis Clases</h1>
         <div class="row themes gy-1">
-            <div class="col-6 col-md-4">pH y Soluciones</div>
-            <div class="col-6 col-md-4">Amortiguadores</div>
-            <div class="col-12 col-md-4">Fuerzas Intermoleculares</div>
-            <div class="col col-md-4">Enlaces Químicos</div>
-            <div class="col col-md-4">Iones</div>
+            <% console.log(data)      %>
+            <% data.forEach(videoList => {     %>
+                <a class="col-6 card container-sm" href="<%= videoList.dbId %>">
+                    <h1>
+                        <%=  videoList["name"] %>
+                    </h1>
+                    <img src="<%=  videoList['thumbnail']    %>" alt="">
+                </a>
+            <% })  %>
         </div>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/3HESaA2RnDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        <p>To view video on youtube click the interface.</p>
+        
+       
     </main>
     <footer>All Rights Reserved by Gabriel Rengifo ©</footer>
 </body>

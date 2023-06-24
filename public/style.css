@@ -38,3 +38,8 @@ li{
     background-color: indigo;
     border: white 1px solid;
 }
+
+a.bg-dark:hover{
+    background-color: #0a58ca !important;
+    transform: scale(1.01);
+}

@@ -22,3 +22,8 @@ Next: create a new partial for reproducing a single embeded video
 
 Came back to project after long hiatus abandonded. Been dealing with personal issues.
 Next change in place is remembering what was I exactly doing with this project
+
+# 6pm
+
+I've decided to lower the scope of the project and use it as a means to practice.
+Next step is having my first interaction with downloads

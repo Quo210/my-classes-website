@@ -1,6 +1,7 @@
 
 @import "nav.css";
 @import "footer.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 
 * {
@@ -10,13 +11,10 @@
 }
 
 body{
-    background-color: #333;
+    background-color: #212529;
     margin: 0;
     padding: 0;
-}
-
-img {
-    max-width: 90vw;
+    min-width: 100vw;
 }
 
 main{
@@ -42,4 +40,24 @@ li{
 a.bg-dark:hover{
     background-color: #0a58ca !important;
     transform: scale(1.01);
+}
+
+.banner-img{
+    min-height: 200px;
+    max-height: 500px;
+    background-image: url('images/banner-img.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    background-size: cover;
+}
+
+.banner-img > .container-lg {
+    background-color: black;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.banner-img > .container-lg > h1 {
+    opacity: 1;
+    text-align: center;
 }

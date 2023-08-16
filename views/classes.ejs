@@ -12,15 +12,21 @@
     <!--DO NOT MODIFY ORIGINAL FILE-->
         <%- include('partials/navbar.ejs') %>
     <main class="container-lg p-1 my-1 bg-dark">
-        <h1 class="text-center">Mis Clases</h1>
-        <div class="row themes row-gap-3 justify-content-center justify-content-lg-between">
-            <% console.log(data)      %>
+        <h1 class="text-center display-1">Mis Clases</h1>
+        <div class="container-sm p-5">
+            <h1 class="text-center">Todos los links redirigen a mi<br><a href="https://www.youtube.com/@ezbiochem-lf4bn"><i class="bi bi-youtube text-danger"></i> Canal de Youtube <i class="bi bi-youtube text-danger"></i></a></h1>
+        </div>
+        <div class="row themes row-gap-5 column-gap-3 justify-content-center">
             <% data.forEach(videoList => {     %>
-                <a class="border border-5 border-light col-8 col-md-4 col-lg-3 card container-sm m-md-3 m-md-1 p-1 p-md-2 p-lg-3 bg-dark link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0 link-underline-opacity-50-hover" href="<%= videoList.dbId %>">
-                    <h3 class="text-center">
-                        <%=  videoList["name"] %>
-                    </h3>
-                    <img class="border border-3 border-light" src="<%=  videoList['thumbnail']    %>" alt="">
+                <a class="border border-5 border-light col-8 col-md-3 card p-0 bg-dark link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0 link-underline-opacity-50-hover" href="<%= videoList.dbId %>">
+                    <div class="card-header h-50">
+                        <h3 class="text-center">
+                            <%=  videoList["name"] %>
+                        </h3>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="<%=  videoList['thumbnail']    %>" alt="<%=  videoList['name'] %>">
+                    </div>
                 </a>
             <% })  %>
         </div>

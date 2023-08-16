@@ -17,3 +17,8 @@ create a new partial for reproducing a single embeded video
 - Styled classes view to look better
 
 Next: create a new partial for reproducing a single embeded video
+
+### 16/8/23
+
+Came back to project after long hiatus abandonded. Been dealing with personal issues.
+Next change in place is remembering what was I exactly doing with this project

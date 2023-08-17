@@ -11,18 +11,22 @@
 <body>
     <!--DO NOT MODIFY ORIGINAL FILE-->
         <%- include('partials/navbar.ejs') %>
-    <main class="container-lg p-1 my-1 row justify-content-center bg-dark mx-auto">
-        <div class="col-9 p-2 my-3 border border-light rounded ">
-            <h1 class="text-center text-info display-6">Nuestro Material de Estudio</h1>
-            <div class="container-sm">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita accusantium itaque ea nemo, molestias nam nesciunt deserunt quisquam maiores doloremque commodi labore laborum laudantium inventore. Animi similique qui aperiam.
-                Ex tempora facere blanditiis eum sapiente quis. Possimus itaque tempora velit dolorum ab adipisci in, pariatur quis libero voluptates explicabo exercitationem maxime aperiam ipsa sequi ipsam facere ad dolores illum.
-                Esse, facere quasi est similique in, corrupti cupiditate vitae quaerat voluptatum adipisci nesciunt sed. Illum optio, cumque, animi quaerat aliquid ducimus perferendis error rem doloremque sed officia labore debitis facilis.</p>
+    <main class="container p-1 my-1 justify-content-center bg-dark mx-auto">
+        <h1 class="text-center text-info display-1">Material de Estudio</h1>
+        <h2 class="text-center">Click abajo <i class="bi bi-cursor-fill btn btn-info"></i> para descargar el material</h2>
+        <div class="container row">
+            <div class="list-group container col-5 text-center">
+                <h3>Material de Estudio</h3>
+                <a href="./downloads/04_lipidos_problemas.docx" class="list-group-item list-group-item-action bg-primary text-light" download="Práctica - Estructura de Lípidos">Presentación de Lípidos</a>
+                <a href="./downloads/04_lipidos_problemas.docx" class="list-group-item list-group-item-action bg-primary text-light" download="Práctica - Estructura de Lípidos">Presentación de Lípidos</a>
+                <a href="./downloads/04_lipidos_problemas.docx" class="list-group-item list-group-item-action bg-primary text-light" download="Práctica - Estructura de Lípidos">Presentación de Lípidos</a>
             </div>
-        </div>
-        
-        <div class="list-group col-6 p-3">
-            <a href="" class="list-group-item list-group-item-action bg-primary text-light">Link 1</a><a href="" class="list-group-item list-group-item-action bg-primary text-light">Link 2</a><a href="" class="list-group-item list-group-item-action bg-primary text-light">Link 3</a><a href="" class="list-group-item list-group-item-action bg-primary text-light">Link 4</a><a href="" class="list-group-item list-group-item-action bg-primary text-light">Link 5</a><a href="" class="list-group-item list-group-item-action bg-primary text-light">Link 6</a>
+            <div class="list-group container col-5 text-center">
+                <h3>Reporte de Notas</h3>
+                <a href="./downloads/EPC_01_NOTAS.docx" class="list-group-item list-group-item-action bg-primary text-light" download="Notas EPC1">Notas del EPC1</a>
+                <a href="./downloads/04_lipidos_problemas.docx" class="list-group-item list-group-item-action bg-primary text-light" download="Práctica - Estructura de Lípidos">Presentación de Lípidos</a>
+                <a href="./downloads/04_lipidos_problemas.docx" class="list-group-item list-group-item-action bg-primary text-light" download="Práctica - Estructura de Lípidos">Presentación de Lípidos</a>
+            </div>
         </div>
     </main>
     <%-  include("partials/footer.ejs")   %>
